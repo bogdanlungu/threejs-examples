@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/_square.scss"],"names":[],"mappings":"AAAA,QACE,wBAA0B,CAC3B,iBAGC,YACA,WAAa,CACd","file":"style.css","sourcesContent":["#square{\r\n  background-color: #FFC857;\r\n}\r\n\r\n#webgl-container{\r\n  width: 700px;\r\n  margin: auto;\r\n}\r\n"]}
