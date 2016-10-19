@@ -13,7 +13,7 @@ if (document.getElementById("webgl-sphere")) {
             stats;
 
         function initScene() {
-            renderer.setSize(700, 400);
+            renderer.setSize(700, 300);
             renderer.setClearColor(0xFFC857, 1);
             document.getElementById("webgl-sphere").appendChild(renderer.domElement);
 
