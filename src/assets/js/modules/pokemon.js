@@ -1,4 +1,4 @@
-if (document.getElementById("webgl-valve")) {
+if (document.getElementById("webgl-pokemon")) {
     let colladaExample = (function() {
 
         "use strict";
@@ -19,7 +19,7 @@ if (document.getElementById("webgl-valve")) {
 
             renderer.setSize(width, height);
             renderer.setClearColor(0x7180AC, 1);
-            document.getElementById("webgl-valve").appendChild(renderer.domElement);
+            document.getElementById("webgl-pokemon").appendChild(renderer.domElement);
 
             scene.add(light);
 
@@ -30,14 +30,14 @@ if (document.getElementById("webgl-valve")) {
                 1000
             );
 
-            camera.position.set(0, 0, 1.1);
+            camera.position.set(0, 0, 5);
 
             scene.add(camera);
 
             let loader = new THREE.ColladaLoader();
             loader.options.convertUpAxis = true;
 
-            loader.load('assets/js/models/valve.dae', function(collada) {
+            loader.load('assets/js/models/pokemon/Pokeball.dae', function(collada) {
                 monster = collada.scene;
                 scene.add(monster);
 
@@ -48,7 +48,8 @@ if (document.getElementById("webgl-valve")) {
 
         function render() {
 
-            monster.rotation.x += 0.01;
+            monster.rotation.x += 0.001;
+            monster.rotation.y += 0.001;
 
             renderer.render(scene, camera);
             requestAnimationFrame(render);
