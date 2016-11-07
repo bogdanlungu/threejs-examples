@@ -6,3 +6,4 @@ import './modules/monkey';
 import './modules/collada';
 import './modules/valve';
 import './modules/pokemon';
+import './modules/black-valve';
